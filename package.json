@@ -4,11 +4,10 @@
   "type": "module",
   "scripts": {
     
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite preview",
-    "tw": "@tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "start": "vite preview"
+},
   },
   "dependencies": {
     "@react-router/node": "^7.5.0",
