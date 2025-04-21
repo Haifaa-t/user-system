@@ -1,14 +1,16 @@
-type PostCardProps = {
-    title: string;
-    body: string;
-  };
-  
-  const PostCard = ({ title, body }: PostCardProps) => (
-    <div className="bg-white p-4 rounded shadow mb-4">
-      <h2 className="text-lg font-bold">{title}</h2>
-      <p>{body}</p>
+type Post = {
+  id: number;
+  title: string;
+  body: string;
+};
+
+const PostCard = ({ post }: { post: { title: string; body: string } }) => {
+  return (
+    <div className="mb-4 p-4 rounded shadow bg-white hover:shadow-md transition">
+      <h2 className="text-lg font-bold text-red-600 mb-1">{post.title}</h2>
+      <p className="text-gray-700">{post.body}</p>
     </div>
   );
-  
-  export default PostCard;
-  
+};
+
+export default PostCard;
